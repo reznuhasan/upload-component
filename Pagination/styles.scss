@@ -1,0 +1,67 @@
+.storeengine-pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 15px;
+    .storeengine-btn {
+        width: 30px;
+        height: 30px;
+        border-radius: 4px;
+        background: rgba(0, 0, 0, 0.08);
+        padding: 0;
+        &:hover {
+            background: #008dff;
+            .storeengine-icon {
+                color: #FFF;
+            }
+        }
+        .storeengine-icon {
+            color: #999999;
+            font-size: 14px;
+        }
+    }
+    .storeengine-pagination-list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 4px;
+        margin: 0;
+        &__item {
+            width: 30px;
+            height: 30px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin: 0;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 36px;
+            border: 1px solid var(--academy-border-color);
+            &:hover {
+                background: #008dff;
+                color: #fff;
+            }
+        }
+        &__item-dots {
+            letter-spacing: 10px;
+            font-weight: 500;
+            width: unset;
+            height: unset;
+            color: none;
+            pointer-events: none;
+            &:hover {
+                background: none;
+                color: none;
+                border-radius: unset;
+            }
+        }
+        &__item-active {
+            background: #008dff;
+            color: #fff;
+        }
+    }
+}
